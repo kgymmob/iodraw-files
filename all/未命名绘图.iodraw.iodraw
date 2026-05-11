@@ -343,7 +343,7 @@
           <mxGeometry x="20" y="54" width="200" height="51" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-302" value="空间滤波器&#xa;(每个通道独立卷积)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-277">
-          <mxGeometry x="76" y="214" width="200" height="66" as="geometry" />
+          <mxGeometry x="60" y="214" width="200" height="66" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-303" value="中间特征图&#xa;(通道间逻辑隔离)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-277">
           <mxGeometry x="84" y="355" width="184" height="66" as="geometry" />
