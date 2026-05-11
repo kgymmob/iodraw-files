@@ -89,7 +89,7 @@
         <mxCell id="qrdT3er-30pG_nSrsptf-108" value="模型性能评估" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="478" y="1134" width="145" height="145" as="geometry" />
         </mxCell>
-        <mxCell id="qrdT3er-30pG_nSrsptf-109" value="准确率达成: 94.00%" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="qrdT3er-30pG_nSrsptf-109" value="准确率" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="451" y="1329" width="200" height="49" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-110" value="混淆矩阵分析" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
