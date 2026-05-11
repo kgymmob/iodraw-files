@@ -239,6 +239,89 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-217" value="4" parent="0" />
+        <mxCell id="qrdT3er-30pG_nSrsptf-218" value="功能需求" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="743" y="230" width="124" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-219" value="恶意代码&#xa;分类检测任务" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="20" y="329" width="157" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-220" value="字节序列&#xa;预处理功能" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="227" y="329" width="140" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-221" value="1D-CNN&#xa;模型架构设计" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="417" y="329" width="157" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-222" value="环境依赖与&#xa;底层框架支撑" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="624" y="329" width="156" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-223" value="实时检测性能&#xa;与资源占用" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="830" y="329" width="156" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-224" value="多维指标评估&#xa;与参数优化" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="1036" y="329" width="156" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-225" value="闭环训练与&#xa;自动化验证流程" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="1242" y="329" width="172" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-226" value="模型泛化性&#xa;与变体适用性" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="1464" y="329" width="156" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-227" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.58;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-218" target="qrdT3er-30pG_nSrsptf-219">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="99" y="304" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-228" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.62;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-218" target="qrdT3er-30pG_nSrsptf-220">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="297" y="304" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-229" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.7;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-218" target="qrdT3er-30pG_nSrsptf-221">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="496" y="304" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-230" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.09;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-218" target="qrdT3er-30pG_nSrsptf-222">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="702" y="304" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-231" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.91;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-218" target="qrdT3er-30pG_nSrsptf-223">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="908" y="304" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-232" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.7;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-218" target="qrdT3er-30pG_nSrsptf-224">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1114" y="304" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-233" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.62;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-218" target="qrdT3er-30pG_nSrsptf-225">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1328" y="304" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-234" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.58;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-218" target="qrdT3er-30pG_nSrsptf-226">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1542" y="304" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
