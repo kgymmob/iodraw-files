@@ -333,6 +333,64 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-277" value="5" parent="0" />
+        <mxCell id="qrdT3er-30pG_nSrsptf-299" value="Step 2: Pointwise Convolution (逐点卷积)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-277">
+          <mxGeometry x="89" y="472" width="371" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-300" value="Step 1: Depthwise Convolution (逐通道卷积)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-277">
+          <mxGeometry x="33" y="189" width="355" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-301" value="输入特征张量&#xa;(Channel 1, 2, ..., N)" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="qrdT3er-30pG_nSrsptf-277">
+          <mxGeometry x="20" y="54" width="200" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-302" value="空间滤波器&#xa;(每个通道独立卷积)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-277">
+          <mxGeometry x="76" y="214" width="200" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-303" value="中间特征图&#xa;(通道间逻辑隔离)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-277">
+          <mxGeometry x="84" y="355" width="184" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-304" value="1x1 卷积核&#xa;(通道特征加权融合)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-277">
+          <mxGeometry x="154" y="497" width="200" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-305" value="输出特征张量&#xa;(New Channels)" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="qrdT3er-30pG_nSrsptf-277">
+          <mxGeometry x="173" y="638" width="161" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-306" value="&lt;b&gt;轻量化原理&lt;/b&gt;&#xa;参数量计算：&#xa;Standard: K×K×Cin×Cout&#xa;DSC: (K×K×Cin) + (1×1×Cin×Cout)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-277">
+          <mxGeometry x="270" y="20" width="234" height="119" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-307" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.34;entryY=0;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-277" source="qrdT3er-30pG_nSrsptf-301" target="qrdT3er-30pG_nSrsptf-302">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="189" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-308" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-277" source="qrdT3er-30pG_nSrsptf-302" target="qrdT3er-30pG_nSrsptf-303">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-309" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.28;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-277" source="qrdT3er-30pG_nSrsptf-303" target="qrdT3er-30pG_nSrsptf-304">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="176" y="472" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-310" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-277" source="qrdT3er-30pG_nSrsptf-304" target="qrdT3er-30pG_nSrsptf-305">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-311" value="" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-277" source="qrdT3er-30pG_nSrsptf-306" target="qrdT3er-30pG_nSrsptf-300">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-312" value="" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-277" source="qrdT3er-30pG_nSrsptf-306" target="qrdT3er-30pG_nSrsptf-299">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
