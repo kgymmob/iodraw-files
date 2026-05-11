@@ -269,8 +269,8 @@
         <mxCell id="qrdT3er-30pG_nSrsptf-227" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.58;entryX=0;entryY=0.5;rounded=0;entryDx=0;entryDy=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-218" target="qrdT3er-30pG_nSrsptf-219">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
+              <mxPoint x="670" y="280" />
               <mxPoint x="99" y="304" />
-              <mxPoint x="410" y="130" />
             </Array>
           </mxGeometry>
         </mxCell>
