@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="5EChZjJbhm4BxfO45JhD">
-    <mxGraphModel dx="2442" dy="1646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3269" dy="1646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -146,34 +146,34 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-125" value="1D-CNN核心架构与优化回路" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="20" y="1620" width="2021" height="215" as="geometry" />
+          <mxGeometry y="140" width="1300" height="220" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-126" value="输入张量" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-125">
-          <mxGeometry x="46" y="107" width="124" height="49" as="geometry" />
+          <mxGeometry x="29.58931222167244" y="109.48837209302326" width="79.7624938149431" height="50.139534883720934" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-127" value="一维卷积层&#xa;(Conv1d)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-125">
-          <mxGeometry x="245" y="98" width="140" height="66" as="geometry" />
+          <mxGeometry x="157.59524987629885" y="100.27906976744187" width="90.0544285007422" height="67.53488372093024" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-128" value="ReLU激活层" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-125">
-          <mxGeometry x="460" y="77" width="144" height="49" as="geometry" />
+          <mxGeometry x="295.8931222167244" y="78.79069767441861" width="92.62741217219198" height="50.139534883720934" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-129" value="最大池化层" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-125">
-          <mxGeometry x="678" y="77" width="140" height="49" as="geometry" />
+          <mxGeometry x="436.12073231073725" y="78.79069767441861" width="90.0544285007422" height="50.139534883720934" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-130" value="展平层" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-125">
-          <mxGeometry x="893" y="77" width="108" height="49" as="geometry" />
+          <mxGeometry x="574.4186046511628" y="78.79069767441861" width="69.470559129144" height="50.139534883720934" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-131" value="全连接层聚合" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-125">
-          <mxGeometry x="1076" y="77" width="156" height="49" as="geometry" />
+          <mxGeometry x="692.1326076199902" y="78.79069767441861" width="100.34636318654131" height="50.139534883720934" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-132" value="Softmax分类输出" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="qrdT3er-30pG_nSrsptf-125">
-          <mxGeometry x="1307" y="47" width="152" height="49" as="geometry" />
+          <mxGeometry x="840.7224146462147" y="48.093023255813954" width="97.77337951509153" height="50.139534883720934" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-133" value="Adam优化器" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-125">
-          <mxGeometry x="1603" y="107" width="149" height="49" as="geometry" />
+          <mxGeometry x="1031.1232063334983" y="109.48837209302326" width="95.8436417615042" height="50.139534883720934" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-134" value="动态权重参数" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-125">
-          <mxGeometry x="1826" y="107" width="157" height="49" as="geometry" />
+          <mxGeometry x="1174.5670460168233" y="109.48837209302326" width="100.98960910440375" height="50.139534883720934" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-135" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.49;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-125" source="qrdT3er-30pG_nSrsptf-126" target="qrdT3er-30pG_nSrsptf-127">
           <mxGeometry relative="1" as="geometry">
@@ -183,7 +183,7 @@
         <mxCell id="qrdT3er-30pG_nSrsptf-136" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.21;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-125" source="qrdT3er-30pG_nSrsptf-127" target="qrdT3er-30pG_nSrsptf-128">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="422" y="101" />
+              <mxPoint x="271.4497773379515" y="103.34883720930233" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -205,14 +205,14 @@
         <mxCell id="qrdT3er-30pG_nSrsptf-140" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.09;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-125" source="qrdT3er-30pG_nSrsptf-131" target="qrdT3er-30pG_nSrsptf-132">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1270" y="72" />
+              <mxPoint x="816.9223156853043" y="73.67441860465117" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-141" value="误差反馈" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0.1;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-125" source="qrdT3er-30pG_nSrsptf-132" target="qrdT3er-30pG_nSrsptf-133">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1531" y="72" />
+              <mxPoint x="984.8095002474023" y="73.67441860465117" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -224,15 +224,15 @@
         <mxCell id="qrdT3er-30pG_nSrsptf-143" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.9;entryX=1;entryY=0.89;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-125" source="qrdT3er-30pG_nSrsptf-133" target="qrdT3er-30pG_nSrsptf-127">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1531" y="171" />
-              <mxPoint x="422" y="171" />
+              <mxPoint x="984.8095002474023" y="174.97674418604652" />
+              <mxPoint x="271.4497773379515" y="174.97674418604652" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-144" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.49;entryX=1;entryY=0.91;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-125" source="qrdT3er-30pG_nSrsptf-133" target="qrdT3er-30pG_nSrsptf-131">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1270" y="131" />
+              <mxPoint x="816.9223156853043" y="134.046511627907" />
             </Array>
           </mxGeometry>
         </mxCell>
