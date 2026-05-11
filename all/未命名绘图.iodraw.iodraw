@@ -264,7 +264,7 @@
           <mxGeometry x="1242" y="329" width="172" height="66" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-226" value="模型泛化性&#xa;与变体适用性" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
-          <mxGeometry x="1464" y="329" width="156" height="66" as="geometry" />
+          <mxGeometry x="986" y="60" width="156" height="66" as="geometry" />
         </mxCell>
         <mxCell id="qrdT3er-30pG_nSrsptf-227" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.58;entryX=0.444;entryY=0.963;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-218" target="qrdT3er-30pG_nSrsptf-219">
           <mxGeometry relative="1" as="geometry">
