@@ -320,7 +320,91 @@
         <mxCell id="qrdT3er-30pG_nSrsptf-234" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.58;entryX=1;entryY=0.5;rounded=0;entryDx=0;entryDy=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-218" target="qrdT3er-30pG_nSrsptf-226">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
+              <mxPoint x="950" y="280" />
               <mxPoint x="1542" y="304" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-235" value="功能需求" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="983" y="420" width="124" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-236" value="恶意代码&#xa;分类检测任务" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="260" y="519" width="157" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-237" value="字节序列&#xa;预处理功能" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="467" y="519" width="140" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-238" value="1D-CNN&#xa;模型架构设计" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="657" y="519" width="157" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-239" value="环境依赖与&#xa;底层框架支撑" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="864" y="519" width="156" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-240" value="实时检测性能&#xa;与资源占用" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="1070" y="519" width="156" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-241" value="多维指标评估&#xa;与参数优化" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="1276" y="519" width="156" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-242" value="闭环训练与&#xa;自动化验证流程" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="1482" y="519" width="172" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-243" value="模型泛化性&#xa;与变体适用性" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="qrdT3er-30pG_nSrsptf-217">
+          <mxGeometry x="1704" y="519" width="156" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-244" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.58;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-235" target="qrdT3er-30pG_nSrsptf-236">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="339" y="494" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-245" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.62;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-235" target="qrdT3er-30pG_nSrsptf-237">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="537" y="494" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-246" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.7;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-235" target="qrdT3er-30pG_nSrsptf-238">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="736" y="494" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-247" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.09;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-235" target="qrdT3er-30pG_nSrsptf-239">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="942" y="494" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-248" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.91;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-235" target="qrdT3er-30pG_nSrsptf-240">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1148" y="494" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-249" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.7;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-235" target="qrdT3er-30pG_nSrsptf-241">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1354" y="494" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-250" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.62;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-235" target="qrdT3er-30pG_nSrsptf-242">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1568" y="494" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-251" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.58;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-235" target="qrdT3er-30pG_nSrsptf-243">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1782" y="494" />
             </Array>
           </mxGeometry>
         </mxCell>
