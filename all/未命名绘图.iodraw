@@ -1,0 +1,398 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="第 1 页" id="5EChZjJbhm4BxfO45JhD">
+    <mxGraphModel dx="1221" dy="823" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" visible="0" />
+        <mxCell id="qrdT3er-30pG_nSrsptf-80" value="Microsoft BIG Malware Dataset&#xa;(LargeTrain.csv)" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="10" y="40" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-81" value="processed_tensors" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="414" y="50" width="246" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-82" value="Train-Test Data&#xa;(张量对)" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="850" y="50" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-83" value="特征提取与规范化" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" parent="1" source="qrdT3er-30pG_nSrsptf-80" target="qrdT3er-30pG_nSrsptf-81" edge="1">
+          <mxGeometry x="0.0017" relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-84" value="划分训练集与验证集 (80:20)" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.51;rounded=0;" parent="1" source="qrdT3er-30pG_nSrsptf-81" target="qrdT3er-30pG_nSrsptf-82" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-170" value="2" parent="0" visible="0" />
+        <mxCell id="qrdT3er-30pG_nSrsptf-172" value="1D-CNN核心架构与优化回路" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" parent="qrdT3er-30pG_nSrsptf-170" vertex="1">
+          <mxGeometry y="140" width="1110" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-173" value="输入张量" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-172" vertex="1">
+          <mxGeometry x="25.264720435428007" y="109.48837209302326" width="68.10489856506679" height="50.139534883720934" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-174" value="一维卷积层&#xa;(Conv1d)" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-172" vertex="1">
+          <mxGeometry x="134.5620979713013" y="100.27906976744187" width="76.89262741217219" height="67.53488372093024" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-175" value="ReLU激活层" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-172" vertex="1">
+          <mxGeometry x="252.64720435428006" y="78.79069767441861" width="79.08955962394853" height="50.139534883720934" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-176" value="最大池化层" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-172" vertex="1">
+          <mxGeometry x="372.380009896091" y="78.79069767441861" width="76.89262741217219" height="50.139534883720934" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-177" value="展平层" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-172" vertex="1">
+          <mxGeometry x="490.4651162790698" y="78.79069767441861" width="59.317169717961406" height="50.139534883720934" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-178" value="全连接层聚合" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-172" vertex="1">
+          <mxGeometry x="590.9747649678377" y="78.79069767441861" width="85.68035625927757" height="50.139534883720934" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-179" value="Softmax分类输出" style="rounded=1;arcSize=20;strokeWidth=2" parent="qrdT3er-30pG_nSrsptf-172" vertex="1">
+          <mxGeometry x="717.8476001979218" y="48.093023255813954" width="83.48342404750123" height="50.139534883720934" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-180" value="Adam优化器" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-172" vertex="1">
+          <mxGeometry x="880.4205838693715" y="109.48837209302326" width="81.83572488866896" height="50.139534883720934" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-181" value="动态权重参数" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-172" vertex="1">
+          <mxGeometry x="1002.8995546759029" y="109.48837209302326" width="86.22958931222166" height="50.139534883720934" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-182" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.49;entryX=0;entryY=0.5;rounded=0;" parent="qrdT3er-30pG_nSrsptf-172" source="qrdT3er-30pG_nSrsptf-173" target="qrdT3er-30pG_nSrsptf-174" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-183" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.21;entryX=0;entryY=0.5;rounded=0;" parent="qrdT3er-30pG_nSrsptf-172" source="qrdT3er-30pG_nSrsptf-174" target="qrdT3er-30pG_nSrsptf-175" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="231.77634834240473" y="103.34883720930233" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-184" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" parent="qrdT3er-30pG_nSrsptf-172" source="qrdT3er-30pG_nSrsptf-175" target="qrdT3er-30pG_nSrsptf-176" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-185" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" parent="qrdT3er-30pG_nSrsptf-172" source="qrdT3er-30pG_nSrsptf-176" target="qrdT3er-30pG_nSrsptf-177" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-186" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" parent="qrdT3er-30pG_nSrsptf-172" source="qrdT3er-30pG_nSrsptf-177" target="qrdT3er-30pG_nSrsptf-178" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-187" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.09;entryX=0;entryY=0.5;rounded=0;" parent="qrdT3er-30pG_nSrsptf-172" source="qrdT3er-30pG_nSrsptf-178" target="qrdT3er-30pG_nSrsptf-179" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="697.5259772389905" y="73.67441860465117" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-188" value="误差反馈" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0.1;entryY=-0.01;rounded=0;" parent="qrdT3er-30pG_nSrsptf-172" source="qrdT3er-30pG_nSrsptf-179" target="qrdT3er-30pG_nSrsptf-180" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840.8758040573973" y="73.67441860465117" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-189" value="" style="curved=1;startArrow=block;endArrow=block;exitX=1;exitY=0.49;entryX=0;entryY=0.49;rounded=0;" parent="qrdT3er-30pG_nSrsptf-172" source="qrdT3er-30pG_nSrsptf-180" target="qrdT3er-30pG_nSrsptf-181" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-190" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.9;entryX=1;entryY=0.89;rounded=0;" parent="qrdT3er-30pG_nSrsptf-172" source="qrdT3er-30pG_nSrsptf-180" target="qrdT3er-30pG_nSrsptf-174" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840.8758040573973" y="174.97674418604652" />
+              <mxPoint x="231.77634834240473" y="174.97674418604652" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-191" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.49;entryX=1;entryY=0.91;rounded=0;" parent="qrdT3er-30pG_nSrsptf-172" source="qrdT3er-30pG_nSrsptf-180" target="qrdT3er-30pG_nSrsptf-178" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="697.5259772389905" y="134.046511627907" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-171" value="3" parent="0" visible="0" />
+        <mxCell id="qrdT3er-30pG_nSrsptf-192" value="多维量化评估指标" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-171" vertex="1">
+          <mxGeometry x="66" y="719" width="921" height="491" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-193" value="Train-Test Data (张量对)" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-171" vertex="1">
+          <mxGeometry x="410" y="400" width="233" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-194" value="1D-CNN指令特征模型" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-171" vertex="1">
+          <mxGeometry x="130" y="521" width="210" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-195" value="1D-CNN统计特征模型" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-171" vertex="1">
+          <mxGeometry x="706" y="521" width="210" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-196" value="Family_ID.cnn.model" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-171" vertex="1">
+          <mxGeometry y="620" width="211" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-197" value="Behavior_Class.cnn.model" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-171" vertex="1">
+          <mxGeometry x="261" y="620" width="248" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-198" value="Entropy_Stat.cnn.model" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-171" vertex="1">
+          <mxGeometry x="559" y="620" width="234" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-199" value="Robust_Variant.cnn.model" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-171" vertex="1">
+          <mxGeometry x="843" y="620" width="248" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-200" value="模型性能评估" style="rhombus;strokeWidth=2;whiteSpace=wrap;" parent="qrdT3er-30pG_nSrsptf-171" vertex="1">
+          <mxGeometry x="458" y="744" width="145" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-201" value="准确率" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-171" vertex="1">
+          <mxGeometry x="431" y="939" width="200" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-202" value="混淆矩阵分析" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-171" vertex="1">
+          <mxGeometry x="452" y="1038" width="156" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-203" value="F1-score平衡度" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-171" vertex="1">
+          <mxGeometry x="446" y="1136" width="169" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-204" value="模型训练分支 A" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.99;entryX=0.5;entryY=0.01;rounded=0;" parent="qrdT3er-30pG_nSrsptf-171" source="qrdT3er-30pG_nSrsptf-193" target="qrdT3er-30pG_nSrsptf-194" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="485" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-205" value="模型训练分支 B" style="curved=1;startArrow=none;endArrow=block;exitX=0.99;exitY=0.99;entryX=0.5;entryY=0.01;rounded=0;" parent="qrdT3er-30pG_nSrsptf-171" source="qrdT3er-30pG_nSrsptf-193" target="qrdT3er-30pG_nSrsptf-195" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="811" y="485" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-206" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.2;exitY=1;entryX=0.5;entryY=0;rounded=0;" parent="qrdT3er-30pG_nSrsptf-171" source="qrdT3er-30pG_nSrsptf-194" target="qrdT3er-30pG_nSrsptf-196" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="106" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-207" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.85;exitY=1;entryX=0.5;entryY=0;rounded=0;" parent="qrdT3er-30pG_nSrsptf-171" source="qrdT3er-30pG_nSrsptf-194" target="qrdT3er-30pG_nSrsptf-197" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="385" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-208" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.18;exitY=1;entryX=0.5;entryY=0;rounded=0;" parent="qrdT3er-30pG_nSrsptf-171" source="qrdT3er-30pG_nSrsptf-195" target="qrdT3er-30pG_nSrsptf-198" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="676" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-209" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.87;exitY=1;entryX=0.5;entryY=0;rounded=0;" parent="qrdT3er-30pG_nSrsptf-171" source="qrdT3er-30pG_nSrsptf-195" target="qrdT3er-30pG_nSrsptf-199" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="967" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-210" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0;entryY=0.38;rounded=0;" parent="qrdT3er-30pG_nSrsptf-171" source="qrdT3er-30pG_nSrsptf-196" target="qrdT3er-30pG_nSrsptf-200" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="106" y="719" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-211" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0;entryY=0.16;rounded=0;" parent="qrdT3er-30pG_nSrsptf-171" source="qrdT3er-30pG_nSrsptf-197" target="qrdT3er-30pG_nSrsptf-200" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="385" y="719" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-212" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=1;entryY=0.16;rounded=0;" parent="qrdT3er-30pG_nSrsptf-171" source="qrdT3er-30pG_nSrsptf-198" target="qrdT3er-30pG_nSrsptf-200" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="676" y="719" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-213" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=1;entryY=0.39;rounded=0;" parent="qrdT3er-30pG_nSrsptf-171" source="qrdT3er-30pG_nSrsptf-199" target="qrdT3er-30pG_nSrsptf-200" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="967" y="719" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-214" value="" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" parent="qrdT3er-30pG_nSrsptf-171" source="qrdT3er-30pG_nSrsptf-200" target="qrdT3er-30pG_nSrsptf-201" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-215" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" parent="qrdT3er-30pG_nSrsptf-171" source="qrdT3er-30pG_nSrsptf-201" target="qrdT3er-30pG_nSrsptf-202" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-216" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0.01;rounded=0;" parent="qrdT3er-30pG_nSrsptf-171" source="qrdT3er-30pG_nSrsptf-202" target="qrdT3er-30pG_nSrsptf-203" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-217" value="4" parent="0" visible="0" />
+        <mxCell id="qrdT3er-30pG_nSrsptf-227" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.58;entryX=0;entryY=0.5;rounded=0;entryDx=0;entryDy=0;" parent="qrdT3er-30pG_nSrsptf-217" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="280" />
+              <mxPoint x="99" y="304" />
+            </Array>
+            <mxPoint x="743" y="258.41999999999985" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-234" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.58;entryX=1;entryY=0.5;rounded=0;entryDx=0;entryDy=0;" parent="qrdT3er-30pG_nSrsptf-217" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950" y="280" />
+              <mxPoint x="1542" y="304" />
+            </Array>
+            <mxPoint x="867" y="258.41999999999985" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-252" value="功能需求分析" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" parent="qrdT3er-30pG_nSrsptf-217" vertex="1">
+          <mxGeometry x="788" y="208" width="116" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-253" value="数据支持维度" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-217" vertex="1">
+          <mxGeometry x="960" y="221" width="187" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-254" value="环境依赖依赖底层框架支撑" style="rounded=1;arcSize=20;strokeWidth=2" parent="qrdT3er-30pG_nSrsptf-217" vertex="1">
+          <mxGeometry x="1157" y="157" width="232" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-255" value="字节序列预处理功能" style="rounded=1;arcSize=20;strokeWidth=2" parent="qrdT3er-30pG_nSrsptf-217" vertex="1">
+          <mxGeometry x="1122" y="304" width="184" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-256" value="核心任务维度" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-217" vertex="1">
+          <mxGeometry x="798" y="335" width="186" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-257" value="恶意代码分类检测任务目标" style="rounded=1;arcSize=20;strokeWidth=2" parent="qrdT3er-30pG_nSrsptf-217" vertex="1">
+          <mxGeometry x="901" y="424" width="233" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-258" value="泛化泛化性与未知变体对抗" style="rounded=1;arcSize=20;strokeWidth=2" parent="qrdT3er-30pG_nSrsptf-217" vertex="1">
+          <mxGeometry x="570" y="412" width="233" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-259" value="模型研发维度" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-217" vertex="1">
+          <mxGeometry x="544" y="250" width="187" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-260" value="1D-CNN轻量化架构设计" style="rounded=1;arcSize=20;strokeWidth=2" parent="qrdT3er-30pG_nSrsptf-217" vertex="1">
+          <mxGeometry x="320" y="328" width="206" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-261" value="闭环训练与自动化验证" style="rounded=1;arcSize=20;strokeWidth=2" parent="qrdT3er-30pG_nSrsptf-217" vertex="1">
+          <mxGeometry x="372" y="180" width="200" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-262" value="效能指标维度" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-217" vertex="1">
+          <mxGeometry x="708" y="137" width="187" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-263" value="实时检测性能与资源占用监测" style="rounded=1;arcSize=20;strokeWidth=2" parent="qrdT3er-30pG_nSrsptf-217" vertex="1">
+          <mxGeometry x="554" y="40" width="232" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-264" value="多维指标评估与参数调优" style="rounded=1;arcSize=20;strokeWidth=2" parent="qrdT3er-30pG_nSrsptf-217" vertex="1">
+          <mxGeometry x="887" y="70" width="216" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-265" style="endArrow=none;rounded=0;" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-252" target="qrdT3er-30pG_nSrsptf-253" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-266" style="endArrow=none;rounded=0;" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-252" target="qrdT3er-30pG_nSrsptf-256" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-267" style="endArrow=none;rounded=0;" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-252" target="qrdT3er-30pG_nSrsptf-259" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-268" style="endArrow=none;rounded=0;" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-252" target="qrdT3er-30pG_nSrsptf-262" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-269" style="endArrow=none;rounded=0;" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-253" target="qrdT3er-30pG_nSrsptf-254" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-270" style="endArrow=none;rounded=0;" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-253" target="qrdT3er-30pG_nSrsptf-255" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-271" style="endArrow=none;rounded=0;" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-256" target="qrdT3er-30pG_nSrsptf-257" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-272" style="endArrow=none;rounded=0;" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-256" target="qrdT3er-30pG_nSrsptf-258" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-273" style="endArrow=none;rounded=0;" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-259" target="qrdT3er-30pG_nSrsptf-260" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-274" style="endArrow=none;rounded=0;" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-259" target="qrdT3er-30pG_nSrsptf-261" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-275" style="endArrow=none;rounded=0;" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-262" target="qrdT3er-30pG_nSrsptf-263" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-276" style="endArrow=none;rounded=0;" parent="qrdT3er-30pG_nSrsptf-217" source="qrdT3er-30pG_nSrsptf-262" target="qrdT3er-30pG_nSrsptf-264" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-277" value="5" parent="0" visible="0" />
+        <mxCell id="qrdT3er-30pG_nSrsptf-299" value="Step 2: Pointwise Convolution (逐点卷积)" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-277" vertex="1">
+          <mxGeometry x="89" y="480" width="371" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-300" value="Step 1: Depthwise Convolution (逐通道卷积)" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-277" vertex="1">
+          <mxGeometry x="33" y="189" width="355" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-301" value="输入特征张量&#xa;(Channel 1, 2, ..., N)" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;" parent="qrdT3er-30pG_nSrsptf-277" vertex="1">
+          <mxGeometry x="20" y="54" width="200" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-302" value="空间滤波器&#xa;(每个通道独立卷积)" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-277" vertex="1">
+          <mxGeometry x="60" y="214" width="200" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-303" value="中间特征图&#xa;(通道间逻辑隔离)" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-277" vertex="1">
+          <mxGeometry x="84" y="355" width="184" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-304" value="1x1 卷积核&#xa;(通道特征加权融合)" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-277" vertex="1">
+          <mxGeometry x="120" y="511" width="200" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-305" value="输出特征张量&#xa;(New Channels)" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;strokeWidth=2;whiteSpace=wrap;" parent="qrdT3er-30pG_nSrsptf-277" vertex="1">
+          <mxGeometry x="173" y="638" width="161" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-306" value="&lt;b&gt;轻量化原理&lt;/b&gt;&#xa;参数量计算：&#xa;Standard: K×K×Cin×Cout&#xa;DSC: (K×K×Cin) + (1×1×Cin×Cout)" style="whiteSpace=wrap;strokeWidth=2;" parent="qrdT3er-30pG_nSrsptf-277" vertex="1">
+          <mxGeometry x="270" y="20" width="234" height="119" as="geometry" />
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-307" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.34;entryY=0;rounded=0;" parent="qrdT3er-30pG_nSrsptf-277" source="qrdT3er-30pG_nSrsptf-301" target="qrdT3er-30pG_nSrsptf-302" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="189" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-308" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=0.01;rounded=0;" parent="qrdT3er-30pG_nSrsptf-277" source="qrdT3er-30pG_nSrsptf-302" target="qrdT3er-30pG_nSrsptf-303" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-309" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.28;entryY=-0.01;rounded=0;" parent="qrdT3er-30pG_nSrsptf-277" source="qrdT3er-30pG_nSrsptf-303" target="qrdT3er-30pG_nSrsptf-304" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="176" y="472" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-310" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" parent="qrdT3er-30pG_nSrsptf-277" source="qrdT3er-30pG_nSrsptf-304" target="qrdT3er-30pG_nSrsptf-305" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-311" value="" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;rounded=0;" parent="qrdT3er-30pG_nSrsptf-277" source="qrdT3er-30pG_nSrsptf-306" target="qrdT3er-30pG_nSrsptf-300" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qrdT3er-30pG_nSrsptf-312" value="" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;rounded=0;" parent="qrdT3er-30pG_nSrsptf-277" source="qrdT3er-30pG_nSrsptf-306" target="qrdT3er-30pG_nSrsptf-299" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSzIiHhB9BUM-onyKwcg-1" value="未命名图层" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
