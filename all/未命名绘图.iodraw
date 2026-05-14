@@ -427,16 +427,16 @@
           <mxGeometry x="381" y="430" width="199" height="84" as="geometry" />
         </mxCell>
         <mxCell id="eSzIiHhB9BUM-onyKwcg-12" value="展平 Flatten&#xa;特征维度 128×16 = 2048" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="eSzIiHhB9BUM-onyKwcg-1">
-          <mxGeometry x="365" y="560" width="231" height="66" as="geometry" />
+          <mxGeometry x="366" y="552" width="231" height="66" as="geometry" />
         </mxCell>
         <mxCell id="eSzIiHhB9BUM-onyKwcg-13" value="全连接层 FC1&#xa;2048 → 256" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="eSzIiHhB9BUM-onyKwcg-1">
-          <mxGeometry x="403" y="660" width="155" height="66" as="geometry" />
+          <mxGeometry x="404" y="650" width="155" height="66" as="geometry" />
         </mxCell>
         <mxCell id="eSzIiHhB9BUM-onyKwcg-14" value="Dropout p=0.5 + ReLU" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="eSzIiHhB9BUM-onyKwcg-1">
-          <mxGeometry x="372.5" y="760" width="216" height="49" as="geometry" />
+          <mxGeometry x="373.5" y="750" width="216" height="49" as="geometry" />
         </mxCell>
         <mxCell id="eSzIiHhB9BUM-onyKwcg-15" value="全连接层 FC2&#xa;256 → 9" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="eSzIiHhB9BUM-onyKwcg-1">
-          <mxGeometry x="403" y="840" width="155" height="66" as="geometry" />
+          <mxGeometry x="404" y="830" width="155" height="66" as="geometry" />
         </mxCell>
         <mxCell id="eSzIiHhB9BUM-onyKwcg-16" value="Softmax 输出&#xa;九个家族概率分布" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="eSzIiHhB9BUM-onyKwcg-1">
           <mxGeometry x="386.5" y="970" width="188" height="66" as="geometry" />
