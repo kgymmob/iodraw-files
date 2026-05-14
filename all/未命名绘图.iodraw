@@ -424,7 +424,7 @@
           <mxGeometry x="379.5" y="350" width="202" height="49" as="geometry" />
         </mxCell>
         <mxCell id="eSzIiHhB9BUM-onyKwcg-11" value="自适应最大池化&#xa;AdaptiveMaxPool1d&#xa;输出长度 16" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="eSzIiHhB9BUM-onyKwcg-1">
-          <mxGeometry x="381" y="440" width="199" height="84" as="geometry" />
+          <mxGeometry x="381" y="430" width="199" height="84" as="geometry" />
         </mxCell>
         <mxCell id="eSzIiHhB9BUM-onyKwcg-12" value="展平 Flatten&#xa;特征维度 128×16 = 2048" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="eSzIiHhB9BUM-onyKwcg-1">
           <mxGeometry x="365" y="560" width="231" height="66" as="geometry" />
